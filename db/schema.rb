@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 3) do
   end
 
   create_table "ingredients", force: :cascade do |t|
-    t.string "type"
+    t.string "kind"
     t.string "name"
   end
 
