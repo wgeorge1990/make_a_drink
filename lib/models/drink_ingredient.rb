@@ -1,5 +1,4 @@
 class DrinkIngredient <ActiveRecord::Base
-belongs_to :drinks
-belongs_to :ingredients
-
+belongs_to :drink
+belongs_to :ingredient
 end
