@@ -44,11 +44,12 @@ class CommandLineInterface
     d_input = STDIN.gets.chomp
     d_input = d_input.capitalize!
     puts ""
-    object = Drink.where(name: d_input)
-    puts "Here are your instructions to make a #{object[0].name}."
-    puts ""
-    puts object[0].instructions
-    puts ""
+    Drink.where(name: d_input).each do |drink|
+      puts "Here are your instructions to make a your drink."
+      puts drink.name
+      puts ""
+      puts drink.instructions
+    end
     go_back_home
     puts "ENJOY! And thanks for using Bartender"
 
