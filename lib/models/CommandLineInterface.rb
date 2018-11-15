@@ -14,8 +14,10 @@ class CommandLineInterface
     input.downcase == "drink" || input.downcase == "ingredient"
       if input == "drink"
         drink_names
+        drink_input
       elsif input == "ingredient"
         ingredient_names
+        ingredient_input
       else
         invalid_response
       end
@@ -37,13 +39,38 @@ class CommandLineInterface
     puts "please make sure you spelled drink or ingredient properly"
   end
 
+  def drink_input
+    puts "Please type the name of a drink:"
+    d_input = STDIN.gets.chomp
+    d_input = d_input.capitalize!
+    puts ""
+    object = Drink.where(name: d_input)
+    puts "Here are your instructions to make a #{object[0].name}."
+    puts ""
+    puts object[0].instructions
+    puts ""
+    puts "ENJOY! And thanks for using Bartender"
+  end
+
+  def ingredient_input
+    puts "Please type the name of an ingredient and I will show you the drinks I have that match."
+    i_input = STDIN.gets.chomp
+    puts ""
+    ing = Ingredient.where(name: i_input)
+    ing[0]drinks
+
+  end
+
+
+
   def run
     greet
     welcome
     gets_user_input
-  end
-end
 
+  end
+
+end
 
 
   # def drink_names_index
