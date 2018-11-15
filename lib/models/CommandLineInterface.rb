@@ -49,36 +49,40 @@ class CommandLineInterface
     puts ""
     puts object[0].instructions
     puts ""
+    go_back_home
     puts "ENJOY! And thanks for using Bartender"
+
   end
 
   def ingredient_input
     puts "Please type the name of an ingredient and I will show you the drinks I have that match."
-    i_input = STDIN.gets.chomp
+    ing_sel = STDIN.gets.chomp
     puts ""
-    ing = Ingredient.where(name: i_input)
-    ing[0]drinks
-
+    # if ingredients = Ingredient.where(name: ing_sel)
+    # binding.pry
+    Ingredient.where(name: ing_sel).each do |ing|
+      #FIXME: make this an iteration
+      ing.drinks.each do |drink|
+        puts drink.name
+      end
+    end
+    go_back_home
   end
 
-
+  def go_back_home
+    puts "TO RESTART PRESS YOUR X KEY:"
+    input = gets.chomp
+    if input.downcase == "x"
+      gets_user_input
+    else
+      puts "GO HOMMMEEE YA SCOUNDRELL!"
+    end
+  end
 
   def run
     greet
     welcome
     gets_user_input
-
   end
 
 end
-
-
-  # def drink_names_index
-  #   drink_names.each_with_index { |item, index| index: => item}
-  # end
-
-  #create a method that asks the user to decide weither they want to pick an ingredient and view all of the drinks that include it. or if they want to pick a drink and see all the ingredients that are included in it.
-
-  #If they pick a drink return all the ingredients and the instructions.
-
-  #if they pick an ingredient then return a list of drinks that include that ingredient and then have them choose from that list+> and then display the indtruction and ingredeints for that choice.
