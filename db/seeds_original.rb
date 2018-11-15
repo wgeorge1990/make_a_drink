@@ -46,75 +46,51 @@ cape_cod = Drink.create(name:"Cape Cod", instructions:"Fill up serving glass wit
 tequila_sunrise = Drink.create(name:"Tequila Sunrise", instructions:"Fill a highball glass with 1 1/2 cups ice and set aside. Combine tequila and orange juice in a cocktail mixing glass. Add 1 cup ice, stir, and strain into the prepared highball glass. Slowly pour in grenadine and let settle. Stir before drinking.")
 gimlet = Drink.create(name:"Gimlet", instructions:"Fill a cocktail shaker with ice and pour in the gin, lime juice and simple syrup. Stir vigorously with a long cocktail spoon until very cold. Strain into a chilled coupe or martini glass, or strain over a rocks glass filled with ice, depending on preference.")
 negroni = Drink.create(name:"Negroni", instructions:"Combine Campari, gin and vermouth in a cocktail shaker, and stir to combine. Run the orange peel around the rim of a glass filled with ice. Pour the cocktail over the ice, and garnish with the orange peel.")
-DrinkIngredient.create(ingredient_id: 1, drink_id: 2)
-DrinkIngredient.create(ingredient_id: 9, drink_id: 2)
-DrinkIngredient.create(ingredient_id: 10, drink_id: 2)
-DrinkIngredient.create(ingredient_id: 15, drink_id: 2)
-DrinkIngredient.create(ingredient_id: 28, drink_id: 2)
-DrinkIngredient.create(ingredient_id: 3, drink_id: 3)
-DrinkIngredient.create(ingredient_id: 11, drink_id: 3)
-DrinkIngredient.create(ingredient_id: 19, drink_id: 3)
-DrinkIngredient.create(ingredient_id: 25, drink_id: 3)
-DrinkIngredient.create(ingredient_id: 6, drink_id: 4)
-DrinkIngredient.create(ingredient_id: 9, drink_id: 4)
-DrinkIngredient.create(ingredient_id: 15, drink_id: 4)
-DrinkIngredient.create(ingredient_id: 26, drink_id: 4)
-DrinkIngredient.create(ingredient_id: 32, drink_id: 4)
-DrinkIngredient.create(ingredient_id: 5, drink_id: 5)
-DrinkIngredient.create(ingredient_id: 18, drink_id: 5)
-DrinkIngredient.create(ingredient_id: 19, drink_id: 5)
-DrinkIngredient.create(ingredient_id: 28, drink_id: 5)
-DrinkIngredient.create(ingredient_id: 25, drink_id: 5)
-DrinkIngredient.create(ingredient_id: 8, drink_id: 6)
-DrinkIngredient.create(ingredient_id: 22, drink_id: 6)
-DrinkIngredient.create(ingredient_id: 18, drink_id: 6)
-DrinkIngredient.create(ingredient_id: 12, drink_id: 6)
-DrinkIngredient.create(ingredient_id: 30, drink_id: 6)
-DrinkIngredient.create(ingredient_id: 3, drink_id: 7)
-DrinkIngredient.create(ingredient_id: 22, drink_id: 7)
-DrinkIngredient.create(ingredient_id: 18, drink_id: 7)
-DrinkIngredient.create(ingredient_id: 12, drink_id: 7)
-DrinkIngredient.create(ingredient_id: 30, drink_id: 7)
-DrinkIngredient.create(ingredient_id: 1, drink_id: 8)
-DrinkIngredient.create(ingredient_id: 10, drink_id: 8)
-DrinkIngredient.create(ingredient_id: 20, drink_id: 8)
-DrinkIngredient.create(ingredient_id: 26, drink_id: 8)
-DrinkIngredient.create(ingredient_id: 1, drink_id: 9)
-DrinkIngredient.create(ingredient_id: 9, drink_id: 9)
-DrinkIngredient.create(ingredient_id: 18, drink_id: 9)
-DrinkIngredient.create(ingredient_id: 22, drink_id: 9)
-DrinkIngredient.create(ingredient_id: 27, drink_id: 9)
-DrinkIngredient.create(ingredient_id: 1, drink_id: 10)
-DrinkIngredient.create(ingredient_id: 7, drink_id: 10)
-DrinkIngredient.create(ingredient_id: 8, drink_id: 10)
-DrinkIngredient.create(ingredient_id: 6, drink_id: 10)
-DrinkIngredient.create(ingredient_id: 9, drink_id: 10)
-DrinkIngredient.create(ingredient_id: 17, drink_id: 10)
-DrinkIngredient.create(ingredient_id: 16, drink_id: 10)
-DrinkIngredient.create(ingredient_id: 27, drink_id: 10)
-DrinkIngredient.create(ingredient_id: 1, drink_id: 11)
-DrinkIngredient.create(ingredient_id: 15, drink_id: 11)
-DrinkIngredient.create(ingredient_id: 13, drink_id: 11)
-DrinkIngredient.create(ingredient_id: 5, drink_id: 12)
-DrinkIngredient.create(ingredient_id: 15, drink_id: 12)
-DrinkIngredient.create(ingredient_id: 13, drink_id: 12)
-DrinkIngredient.create(ingredient_id: 26, drink_id: 12)
-DrinkIngredient.create(ingredient_id: 7, drink_id: 13)
-DrinkIngredient.create(ingredient_id: 15, drink_id: 13)
-DrinkIngredient.create(ingredient_id: 18, drink_id: 13)
-DrinkIngredient.create(ingredient_id: 31, drink_id: 13)
-DrinkIngredient.create(ingredient_id: 26, drink_id: 13)
-DrinkIngredient.create(ingredient_id: 1, drink_id: 14)
-DrinkIngredient.create(ingredient_id: 10, drink_id: 14)
-DrinkIngredient.create(ingredient_id: 26, drink_id: 14)
-DrinkIngredient.create(ingredient_id: 6, drink_id: 15)
-DrinkIngredient.create(ingredient_id: 20, drink_id: 15)
-DrinkIngredient.create(ingredient_id: 18, drink_id: 15)
-DrinkIngredient.create(ingredient_id: 25, drink_id: 15)
-DrinkIngredient.create(ingredient_id: 8, drink_id: 16)
-DrinkIngredient.create(ingredient_id: 15, drink_id: 16)
-DrinkIngredient.create(ingredient_id: 18, drink_id: 16)
-DrinkIngredient.create(ingredient_id: 8, drink_id: 17)
-DrinkIngredient.create(ingredient_id: 14, drink_id: 17)
-DrinkIngredient.create(ingredient_id: 11, drink_id: 17)
-DrinkIngredient.create(ingredient_id: 28, drink_id: 17)
+
+
+cosmo
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (2, 1);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (2, 9);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (2, 10);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (2, 15);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (2, 28);
+
+manhattan
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (3, 3);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (3, 11);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (3, 19);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (3, 25);
+
+margarita
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (4, 6);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (4, 9);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (4, 15);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (4, 26);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (4, 32);
+
+oldfashioned MISSING BURBON
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (5, 5);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (5, 18);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (5, 19);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (5, );
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (5, );
+
+french 75
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (6, 8);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (6, 22);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (6, 18);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (6, 12);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (6, 30);
+
+sozerac
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (7, 3);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (7, 22);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (7, 18);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (7, 12);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (7, 30);
+
+madras
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (8, 1);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (8, 10);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (8, 20);
+INSERT INTO drink_ingredients (drink_id, ingredient_id) VALUES (8, 26);
