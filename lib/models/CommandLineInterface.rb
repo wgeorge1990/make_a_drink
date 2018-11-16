@@ -1,11 +1,27 @@
 class CommandLineInterface
 
   def greet
-    puts "Welcome to Bartender, the command line solution that will help you make the best mixed drink on the block!"
+    puts""
+    puts""
+    puts "WELCOME TO BARTENDER!".center(115)
+    puts ""
+  end
+
+  def what_i_am
+    "The command line solution that will help you make the best mixed drink on the block!"
   end
 
   def welcome
-    puts "You have two options. You can pick a drink you would like to make or you can pick an ingredient to help you find the drink you would like to make"
+    puts ""
+    puts "You have two options:"
+    puts ""
+    puts "1. You can pick a drink you would like to make"
+    puts ""
+    puts "OR"
+    puts ""
+    puts "2. You can pick an ingredient to help you find the drink you would like to make"
+    puts""
+    puts"PLEASE"
   end
 
   def gets_user_input
@@ -18,6 +34,7 @@ class CommandLineInterface
       elsif input == "ingredient"
         ingredient_names
         ingredient_input
+        drink_input
       else
         invalid_response
       end
@@ -66,6 +83,7 @@ class CommandLineInterface
       ing.drinks.each do |drink|
         puts drink.name
       end
+      drink_input
     end
     go_back_home
   end
@@ -76,12 +94,13 @@ class CommandLineInterface
     if input.downcase == "x"
       gets_user_input
     else
-      puts "GO HOMMMEEE YA SCOUNDRELL!"
     end
+    puts "GO HOMMMEEE YA SCOUNDRELL!"
   end
 
   def run
     greet
+    what_i_am
     welcome
     gets_user_input
   end
